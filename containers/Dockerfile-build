@@ -1,0 +1,13 @@
+# LICENSE TEXT #
+
+# WSO2 IS build container
+FROM alpine:3.15
+
+ARG WSO2IS_VERSION="7.0.0" \
+    WSO2IS_REPO="https://github.com/wso2/product-is"
+
+ENV LANG='en_UK.UTF-8' LANGUAGE='en_UK:en' LC_ALL='en_UK.UTF-8'
+
+# Build reqs
+RUN apk add --no-cache tzdata musl-locales musl-locales-lang openjdk11-jdk maven apache-ant git
+
