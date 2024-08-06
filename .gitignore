@@ -1,0 +1,5 @@
+# vim swaps
+*.swp
+
+# build output
+output/
